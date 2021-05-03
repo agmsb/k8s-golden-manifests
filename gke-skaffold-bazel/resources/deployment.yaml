@@ -13,7 +13,7 @@ spec:
         app: skaffold-bazel
     spec:
       containers:
-      - name: gke-flask-app
+      - name: skaffold-bazel
         image: gcr.io/agmsb-k8s/skaffold-bazel
         imagePullPolicy: IfNotPresent
         ports:
