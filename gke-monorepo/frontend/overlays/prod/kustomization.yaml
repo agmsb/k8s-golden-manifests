@@ -1,0 +1,6 @@
+commonLabels:
+  env: prod
+bases:
+- https://github.com/agmsb/k8s-golden-manifests/gke-monorepo/frontend
+patchesStrategicMerge:
+- deployment.yaml
