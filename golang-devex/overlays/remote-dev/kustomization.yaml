@@ -1,0 +1,7 @@
+commonLabels:
+  env: prod
+bases:
+- https://github.com/agmsb/k8s-golden-manifests/golang-devex/resources
+patchesStrategicMerge:
+- deployment.yaml
+- service.yaml

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: golang-devex
+spec:
+  selector:
+    matchLabels:
+      app: golang-devex
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: golang-devex
+    spec:
+      containers:
+      - name: golang-devex
+        image: gcr.io/agmsb-k8s/golang-devex
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
